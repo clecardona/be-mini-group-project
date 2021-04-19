@@ -21,7 +21,7 @@ public class Post {
     @Column(nullable = false)
     private String body;
 
-    @OneToMany(mappedBy = "post")
+    @OneToMany(mappedBy = "post", cascade = CascadeType.ALL)
     List<Comment> comments;
 
     // constructor:
