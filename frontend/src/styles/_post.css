@@ -3,6 +3,7 @@
     border-radius: 10px;
     background-color: #f8f9fa;
 }
+
 .btn-post {
     background-color: #513C65;
     border: 2px solid #D5B761;
@@ -16,13 +17,22 @@
     border: 2px solid #D5B761;
     color: white;
 }
+.btn-primary:not(:disabled):not(.disabled):active{
+    background-color: #513C65 !important;
+    border: 2px solid #D5B761 !important;
+    color: white !important;
+    transition: none !important;
+}
+
+.btn-primary:hover {
+    background-color: #513C65 !important;
+}
 
 .btn-primary:hover {
     background-color: #513C65 !important;
 }
 
 .post-container {
-    /* background-color: rgb(230, 230, 230); */
     background-color: #f8f9fa;
     display: flex;
     flex-direction: column;
@@ -47,7 +57,6 @@
 
 .post-header p {
     padding-right: 10px;
-    /* color: #444; */
     color: #D5B761;
 }
 
@@ -55,6 +64,7 @@
     padding: 20px 0px;
     color: #513C65;
 }
+
 .postList-title {
     color: #D5B761;
     text-align: center;
