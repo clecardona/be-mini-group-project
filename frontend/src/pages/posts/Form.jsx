@@ -15,10 +15,8 @@ export default function PostForm({ onSubmit }) {
   return (
     <div>
       <div>
-
         <div>
           <div className="form-group">
-            
             <textarea
               className="form-control"
               placeholder = "Type your new post here"
@@ -26,7 +24,6 @@ export default function PostForm({ onSubmit }) {
               onChange={(e) => setBody(e.target.value)}
             />
           </div>
-
           <div className="form-group">
             <button className="btn btn-primary" onClick={handleSubmit}>
               Post

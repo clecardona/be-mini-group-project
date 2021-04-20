@@ -5,7 +5,6 @@ import React, { useEffect, useState } from "react";
 import PostsApi from "../../api/PostsApi";
 import Form from "./Form";
 import Card from "./Card";
-import UpdatePost from "./UpdatePost";
 import userthumb from "../../assets/userthumb.png";
 
 export default function PostsPage() {
@@ -18,7 +17,6 @@ export default function PostsPage() {
       const response = await PostsApi.createPost(postData);
       const post = response.data;
       const newPosts = posts.concat(post);
-
       setPosts(newPosts);
     } catch (e) {
       console.error(e);
@@ -29,7 +27,6 @@ export default function PostsPage() {
     try {
       await PostsApi.deletePost(post.id);
       const newPosts = posts.filter((p) => p.id !== post.id);
-
       setPosts(newPosts);
     } catch (e) {
       console.error(e);
@@ -52,7 +49,7 @@ export default function PostsPage() {
   ));
 
   return (
-<div>
+    <div>
       <div className="card">
         <div className="card-body">
           <h4 className="card-title">Welcome to Dumpty Forums</h4>
@@ -60,16 +57,15 @@ export default function PostsPage() {
           <br/>
           <div className="card-content">
             <div className="form-group">
-      <button className="btn-post" onClick={startUpdate}>Create Post</button>
-      {toggle ? (<Form onSubmit={(postData) => createPost(postData)} />
-
-      ) : null}
+            <button className="btn-post" onClick={startUpdate}>Create Post</button>
+            {toggle ? (<Form onSubmit={(postData) => createPost(postData)} />
+            ) : null}
             </div>
           </div>
         </div>
       </div>
       <h4 className="postList-title"> Hey, don't miss these craps!</h4>
       {CardsArray}
-</div>
+    </div>
   );
 }

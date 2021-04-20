@@ -17,7 +17,6 @@ export default function HomePage() {
          Here you will find the biggest fanbase. And don't forget : <br/>
          <em>In Crap We Trust</em>
 
-
         </p>
         <ul>
           <li>

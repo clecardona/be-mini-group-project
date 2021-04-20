@@ -7,13 +7,11 @@ export default function CommentList({ postId }) {
   const [comments, setComments] = useState([]);
 
   //methods
-
   async function createComment(commentData) {
     try {
       const response = await CommentsAPI.createComment(commentData, postId);
       const comment = response.data;
       const newComments = comments.concat(comment);
-
       setComments(newComments);
     } catch (e) {
       console.error(e);
@@ -24,7 +22,6 @@ export default function CommentList({ postId }) {
     try {
       await CommentsAPI.deleteComment(comment.id);
       const newComments = comments.filter((c) => c.id !== comment.id);
-
       setComments(newComments);
     } catch (e) {
       console.error(e);
@@ -49,9 +46,7 @@ export default function CommentList({ postId }) {
 
   return (
     <div className="comment-container">
-
-       {commentsArray.length } comment(s)
-
+      {commentsArray.length} comment(s)
       {commentsArray}
       <CommentForm onSubmit={(commentData) => createComment(commentData)} />
     </div>
