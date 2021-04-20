@@ -67,7 +67,7 @@ public class PostController {
     /**
      * Update a post based on ID
      * @param id ID of the post to edit
-     * @param Post updatedPost new user-created body to update the post
+     * @param updatedPost new user-created body to update the post
      * @return HTTP ok status of updated post
      */
     @PutMapping("/{id}")

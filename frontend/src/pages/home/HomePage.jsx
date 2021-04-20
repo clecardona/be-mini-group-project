@@ -20,7 +20,7 @@ export default function HomePage() {
         </p>
         <ul>
           <li>
-            <a target="blank" href="https://store.steampowered.com/app/294830/RECYCLE/">Play the Game</a>
+            <a target="blank" href="https://store.steampowered.com/app/294830/RECYCLE/">Game</a>
           </li>
           <li>
             <a target="blank" href="https://en.wikipedia.org/wiki/Reference">References </a>

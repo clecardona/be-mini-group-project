@@ -42,8 +42,6 @@ export default function App() {
             <HomePage />
           </Route>
 
-
-
         </Switch>
       </div>
     </BrowserRouter>
