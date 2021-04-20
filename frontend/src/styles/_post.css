@@ -17,6 +17,10 @@
     color: white;
 }
 
+.btn-primary:hover {
+    background-color: #513C65 !important;
+}
+
 .post-container {
     /* background-color: rgb(230, 230, 230); */
     background-color: #f8f9fa;
