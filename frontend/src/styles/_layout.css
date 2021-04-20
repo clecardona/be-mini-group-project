@@ -12,6 +12,16 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;300;400;500;600;700&display=swap");
 
+.mt-3, .my-3 {
+  margin-top: 1rem !important;
+  margin-bottom: 18px;
+}
+
+hr {
+  height: 2px;
+  color: grey;
+}
+
 /* AuthPage.jsx -  left content */
 .col-md-6 {
   display: flex;
@@ -36,8 +46,15 @@
   align-self: center;
   width: 40%;
 }
-.card {
-  background-color: rgba(255, 255, 255, 0, 1);
+
+.card-content {
+  width: 85%;
+  margin-top: 20px;
+}
+
+.form-control textarea {
+  width: 100%;
+  border-radius: 10px;
 }
 
 .card-body {
@@ -46,11 +63,12 @@
   justify-content: center;
   align-items: center;
   font-family: "Montserrat Alternates", sans-serif;
+  border: none;
+
 }
 .card-body p {
-  text-align: center;
-  width: 60%;
   word-wrap: break-word;
+  text-align: justify;
 }
 .card-body p em {
   font-weight: 600;
@@ -64,7 +82,7 @@
 .card-body ul li {
   margin: 0px 10px;
 
-  background-color: #513c65;
+  background-color: #111011;
   list-style-type: none;
   border-radius: 20px;
 }
@@ -77,3 +95,14 @@
   color: #f5b60b;
   text-decoration: none;
 }
+.product-description {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+
+/* comments */
+/*
+.comment-body button{
+  font-size: 0.8em;
+}*/

@@ -1,10 +1,9 @@
 import React from "react";
-import userthumb from "../../assets/userthumb.png";
 
-export default function PostForm({ onSubmit }) {
+export default function CommentForm({ onSubmit }) {
   const [body, setBody] = React.useState("");
 
-  const handleSubmit = () => {
+  const handleClick = () => {
     // Invoke the passed in event callback
     onSubmit({ body: body });
 
@@ -13,29 +12,28 @@ export default function PostForm({ onSubmit }) {
   };
 
   return (
-    <div className="card">
+    
       <div className="card-body">
-        <h4 className="card-title">Create a new post</h4>
-        <img className="user-thumb" src={userthumb} />
-        <br/>
+        <h5 className="card-title">Comment on this post </h5>
+
         <div className="card-content">
           <div className="form-group">
-            
+
             <textarea
               className="form-control"
-              placeholder = "Create a new post here"
+              placeholder="Enter your comment here"
               value={body}
               onChange={(e) => setBody(e.target.value)}
             />
-          </div>
+         </div>
 
           <div className="form-group">
-            <button className="btn btn-primary" onClick={handleSubmit}>
-              Post
+            <button className="btn btn-primary" onClick={handleClick}>
+              Comment
             </button>
           </div>
         </div>
       </div>
-    </div>
+    
   );
 }
