@@ -41,7 +41,6 @@ hr {
 }
 
 /* HomePage.jsx card */
-
 .illustration {
   align-self: center;
   width: 40%;
@@ -99,10 +98,3 @@ hr {
   margin-top: 24px;
   margin-bottom: 24px;
 }
-
-
-/* comments */
-/*
-.comment-body button{
-  font-size: 0.8em;
-}*/

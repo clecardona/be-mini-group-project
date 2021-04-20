@@ -5,11 +5,6 @@ class CommentsApi {
     return Api.get("/posts/" + postId + "/comments");
   }
 
-// Currently we don't have this mapping request. 
-//   getCommentById(id) {
-//     return Api.get("/comments/" + id);
-//   } 
-
   createComment(comment, postId) {
     return Api.post("/posts/" + postId + "/comments", comment);
   }
